@@ -1,5 +1,5 @@
 /**
- * 5 semestre - Eng. da ComputaÁ„o - Insper
+ * 5 semestre - Eng. da Computa√ß√£o - Insper
  * Rafael Corsi - rafael.corsi@insper.edu.br
  *
  * Projeto 0 para a placa SAME70-XPLD
@@ -159,6 +159,8 @@
 #define NOTE_D8  4699
 #define NOTE_DS8 4978
 
+
+//https://www.princetronics.com/supermariothemesong/
 int melody[] = {
 	NOTE_E7, NOTE_E7, 0, NOTE_E7,
 	0, NOTE_C7, NOTE_E7, 0,
@@ -215,10 +217,14 @@ int tempo[] = {
 
 //int teste[] = {NOTE_D6, NOTE_C5, NOTE_B5, NOTE_A5};
 
+
+//Inicio do tema mortal kombat
 int mk[] = {NOTE_A4, NOTE_A4, NOTE_C4, NOTE_A4, NOTE_D5, NOTE_A4, NOTE_E5, NOTE_D5, 
 				NOTE_C4, NOTE_C4, NOTE_E5, NOTE_C4, NOTE_G5,NOTE_C4,NOTE_E5,NOTE_C4, 
 				NOTE_F4, NOTE_F4, NOTE_AS5, NOTE_F4, NOTE_C5,NOTE_F4, NOTE_D5};
 
+//http://arduinorocks.blogspot.com/2013/08/arduino-buzzer-fear-of-dark.html
+//Fear of the dark, iron maiden
 int tune[] = { NOTE_D5, NOTE_D5, NOTE_A4, NOTE_A4, NOTE_D5, NOTE_D5, NOTE_E5, NOTE_E5, NOTE_F5, NOTE_F5, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_D5, NOTE_E5, NOTE_D5,
                NOTE_C5, NOTE_C5, NOTE_G4, NOTE_G4, NOTE_C5, NOTE_C5, NOTE_D5, NOTE_D5, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_D5, NOTE_C5, NOTE_C5, NOTE_E5, NOTE_C5,
                NOTE_D5, NOTE_D5, NOTE_A4, NOTE_A4, NOTE_D5, NOTE_D5, NOTE_E5, NOTE_E5, NOTE_F5, NOTE_F5, NOTE_E5, NOTE_E5, NOTE_D5, NOTE_D5, NOTE_E5, NOTE_D5,
@@ -259,7 +265,7 @@ void init(void);
 /* funcoes                                                              */
 /************************************************************************/
 
-// FunÁ„o de inicializaÁ„o do uC
+// Fun√ß√£o de inicializa√ß√£o do uC
 void init(void)
 {
 	// Initialize the board clock
@@ -331,7 +337,7 @@ int main(void)
   init();
 
   // super loop
-  // aplicacoes embarcadas n„o devem sair do while(1).
+  // aplicacoes embarcadas n√£o devem sair do while(1).
   int f,but1,but2,but3,led1,led2,led3, playing;
   
   int flag1 , flag2 , flag3;
